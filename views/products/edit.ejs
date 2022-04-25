@@ -15,11 +15,13 @@
         <input type="category" name="price" id="price" placeholder="Price" value="<%=product.price%>">
         <label for="category"></label>
         <select name="category" id="category">
-            <option value="fruit">fruit</option>
-            <option value="vegetable">vegetable</option>
-            <option value="dairy">dairy</option>
+            <option value="fruit" <%=product.category=== 'fruit' ? 'selected': ''%>>fruit</option>
+            <option value="vegetable" <%=product.category=== 'vegetable' ? 'selected': ''%>>vegetable</option>
+            <option value="dairy" <%=product.category=== 'dairy' ? 'selected': ''%>>dairy</option>
         </select>
         <button>Submit</button>
     </form>
+    <a href="/products"><button>Back to products</button></a>
+    
 </body>
 </html>
